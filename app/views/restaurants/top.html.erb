@@ -1,0 +1,19 @@
+<h1>Top Restaurants (5 stars)</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @restaurants.each do |restaurant| %>
+      <tr>
+        <td><%= restaurant.name %></td>
+        <td><%= restaurant.address %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
