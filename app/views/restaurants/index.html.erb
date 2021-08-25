@@ -28,6 +28,21 @@
 
 <br>
 
+<div class="all-restaurants">
+
+<% @restaurants.each do |restaurant| %>
+  <div class="card-product mt-4">
+    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+    <div class="card-product-infos">
+      <h2><%= link_to restaurant.name, restaurant %></h2>
+      <p><%= restaurant.address %></p>
+    </div>
+  </div>
+<% end %>
+
+</div>
+
+
 <%= link_to 'New Restaurant', new_restaurant_path %>
 
 <%= link_to 'Top Restaurants', top_restaurants_path %>
